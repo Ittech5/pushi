@@ -1,0 +1,65 @@
+PS E:\git learn> cd .\mainfile\
+PS E:\git learn\mainfile> git statud
+git: 'statud' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS E:\git learn\mainfile> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS E:\git learn\mainfile> git init 
+On branch master
+
+No commits yet
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+PS E:\git learn\mainfile> git commit -m "creared"
+ create mode 100644 test
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+PS E:\git learn\mainfile> git branch
+* master
+PS E:\git learn\mainfile> git remote add origin https://github.com/Ittech5/mainfile.git
+PS E:\git learn\mainfile> git branch
+* main
+PS E:\git learn\mainfile> git  push  origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 228 bytes | 228.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ittech5/mainfile.git
+ * [new branch]      main -> main
+PS E:\git learn\mainfile> cd ..
+PS E:\git learn> cd .\gitdemo\
+
+
+
+Mode                 LastWriteTime         Length Name
+-a----         9/26/2023  12:01 AM            455 timeline
+
+PS E:\git learn\gitdemo> git init  
+Initialized empty Git repository in E:/git learn/gitdemo/.git/
+PS E:\git learn\gitdemo> git add .
+PS E:\git learn\gitdemo> git commit -m "demo"
+ create mode 100644 timeline
+PS E:\git learn\gitdemo> git push origin master
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS E:\git learn\gitdemo> git remote add origin https://github.com/Ittech5/gitdemo.git
+PS E:\git learn\gitdemo> git branch
+* master
+PS E:\git learn\gitdemo> git branch -m main
+PS E:\git learn\gitdemo> git branch        
+* main
+PS E:\git learn\gitdemo> git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 426 bytes | 213.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ittech5/gitdemo.git
+ * [new branch]      main -> main
+PS E:\git learn\gitdemo> 
